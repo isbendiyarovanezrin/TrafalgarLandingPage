@@ -1,0 +1,30 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+.img-100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: #fff;
+  background-color: $secondary-clr;
+}
