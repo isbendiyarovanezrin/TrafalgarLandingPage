@@ -414,3 +414,208 @@ h3 {
   background-color: $white-clr;
   color: lighten($secondary-clr, 9%) !important;
 }
+
+/*--------------------*\
+     MEDIA QUERIES
+\*--------------------*/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
+
+  .service__item {
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 6px;
+  }
+
+  .service__item__img {
+    width: 50px;
+  }
+
+  .vector__img--down {
+    width: 7%;
+  }
+
+  // testimonial
+  .testimonial {
+    margin: 0 auto 4rem;
+    width: 90%;
+
+    &__item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+
+  .testimonial__title,
+  .testimonial__title__details {
+    padding: 0;
+  }
+
+  .testimonial__img,
+  .testimonial-line,
+  .testimonial__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  // common
+  html {
+    font-size: 5px;
+  }
+
+  .wrapper {
+    padding: 3rem 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-9 {
+    width: 0;
+  }
+
+  #service-section:before,
+  #footer-section:after,
+  #footer-section:before,
+  #article-section:before,
+  .testimonial::after,
+  .testimonial::before,
+  .nav--right {
+    display: none;
+  }
+
+  .hero-section--left,
+  .advantages__item--right,
+  .advantages__item--left,
+  .footer__item {
+    text-align: center;
+  }
+
+  .description {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    margin-top: 5px;
+
+    &__caption {
+      margin-left: 2.5rem;
+    }
+  }
+
+  // navbar
+  .navbar-row {
+    flex-direction: row;
+    justify-content: space-evenly !important;
+  }
+
+  .nav--left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: inline-block;
+    margin-left: -30px !important;
+  }
+
+  // hero section
+  .hero-section--left {
+    padding: 11rem 0rem 6rem 0;
+  }
+
+  // service section
+  .service__item {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2.5rem 2.5rem 2rem;
+  }
+
+  .service__story {
+    width: 55%;
+    height: auto;
+  }
+
+  .img__box {
+    height: 100%;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  // advantages section
+  .advantages__item--right {
+    padding: 4rem 0 0;
+  }
+
+  .advantages__item--left {
+    padding: 0 0 4rem;
+  }
+
+  .mobile-line {
+    margin: 2rem auto 0 !important;
+  }
+
+  // article section
+  .article__item {
+    margin-bottom: 2rem;
+    width: 100%;
+
+    &__body {
+      width: 100%;
+    }
+
+    .vector__img--right {
+      margin-top: 0;
+    }
+  }
+
+  // footer
+  #footer-section {
+    padding: 4rem 0;
+  }
+
+  .footer__text {
+    padding: 2rem 0;
+  }
+
+  .footer__item__title {
+    margin: 1rem auto 0;
+  }
+
+  .footer__item__link {
+    padding: 0.5rem 0;
+  }
+
+  .mobile-logo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .testimonial__controls {
+    display: none;
+  }
+}
