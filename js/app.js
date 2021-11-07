@@ -1,7 +1,7 @@
 // loader
 function removeLoader() {
-  $("#loaderDiv").fadeOut(500, function () {
-    $("#loaderDiv").remove();
+  $("#loadingDiv").fadeOut(500, function () {
+    $("#loadingDiv").remove();
   });
 }
 
