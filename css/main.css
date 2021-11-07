@@ -188,6 +188,32 @@ h3 {
 }
 
 /*--------------------*\
+         LOADER
+\*--------------------*/
+#loaderDiv {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f2f3;
+}
+
+.loader {
+  width: 10rem;
+  height: 10rem;
+  background: center/contain no-repeat url(../img/Blocks-1s-200px.gif);
+}
+
+/*--------------------*\
          NAVBAR
 \*--------------------*/
 .nav__list {
