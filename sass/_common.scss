@@ -5,11 +5,12 @@ html {
 
 body {
   font-family: $font-family;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 img {
   object-fit: cover;
+  user-select: none;
 }
 
 .img-100 {
@@ -26,5 +27,5 @@ button {
 
 ::selection {
   color: #fff;
-  background-color: $secondary-clr;
+  background-color: darken($secondary-clr, 20%);
 }

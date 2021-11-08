@@ -31,6 +31,7 @@ h3 {
 .btn {
   height: 5rem;
   width: 18rem;
+  user-select: none;
   border-radius: 55px;
   background-color: $secondary-clr;
   color: $white-clr;
@@ -85,7 +86,7 @@ h3 {
 .loader {
   width: 10rem;
   height: 10rem;
-  background: center / contain no-repeat url(../img/Blocks-1s-200px.gif);
+  background: center / contain no-repeat url(../img/loader.gif);
 }
 
 /*--------------------*\
@@ -173,14 +174,10 @@ h3 {
 \*--------------------*/
 #service-section {
   margin-top: 19rem;
-  background-image: url(../img/element2.png);
-  background-repeat: no-repeat;
-  background-position: right;
+  background: url(../img/element2.png) right no-repeat;
 
   &::before {
     content: "";
-    background-image: url(../img/Vector.jpg);
-    background-repeat: no-repeat;
     opacity: 0.9;
     position: absolute;
     left: -85px;
@@ -188,6 +185,7 @@ h3 {
     height: 670px;
     z-index: -2;
     margin-top: 152px;
+    background: url(../img/bg-element.jpg) no-repeat;
   }
 }
 
@@ -213,7 +211,7 @@ h3 {
 /*--------------------*\
    ADVANTAGES SECTION
 \*--------------------*/
-#advantages-section {
+.advantages-section {
   margin: 22rem 0;
 }
 
@@ -245,7 +243,7 @@ h3 {
 
   &::before {
     content: "";
-    background: url(../img/Group.png) no-repeat;
+    background: url(../img/element3.png) no-repeat;
     width: 100px;
     height: 120px;
     position: absolute;
@@ -260,7 +258,7 @@ h3 {
     height: 120px;
     left: 89px;
     position: absolute;
-    background: url(../img/element.png) no-repeat;
+    background: url(../img/element1.png) no-repeat;
     z-index: -1;
   }
 
@@ -358,7 +356,7 @@ h3 {
 
   &::before {
     content: "";
-    background: url(../img/Vector5.png) no-repeat;
+    background: url(../img/bg-element.png) no-repeat;
     position: absolute;
     right: -500px;
     width: 930px;
@@ -409,7 +407,7 @@ h3 {
     color: $secondary-clr;
 
     &:hover {
-      color: $primary-clr;
+      color: darken($secondary-clr, 50%) !important;
       @include transition(all, 0.3s, ease);
     }
   }
@@ -468,7 +466,7 @@ h3 {
     height: 90px;
     left: -20px;
     position: absolute;
-    background: url(../img/Group.png) no-repeat;
+    background: url(../img/element3.png) no-repeat;
   }
 }
 
@@ -487,6 +485,9 @@ h3 {
 
   &__link {
     padding: 1.4rem 0 0 0;
+    &:hover {
+      color: darken($secondary-clr, 20%) !important;
+    }
   }
 }
 
@@ -571,8 +572,13 @@ h3 {
 
   .testimonial__img,
   .testimonial-line,
-  .testimonial__title {
+  .testimonial__title,
+  .testimonial__body {
     text-align: center;
+  }
+
+  .testimonial__body {
+    margin-left: 0;
   }
 }
 
@@ -637,6 +643,7 @@ h3 {
 
   .menu {
     display: inline-block;
+    cursor: pointer;
     margin-left: -30px !important;
   }
 

@@ -15,6 +15,47 @@ ul {
   list-style-type: none;
 }
 
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  overflow-x: hidden !important;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.img-100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #0a5bcb;
+}
+
+::selection {
+  color: #fff;
+  background-color: #0a5bcb;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,43 +119,6 @@ ul {
   width: calc((100% / 12) * 12);
 }
 
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Mulish", sans-serif;
-  overflow-x: hidden;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.img-100 {
-  width: 100%;
-}
-
-.center {
-  text-align: center;
-}
-
-button {
-  cursor: pointer;
-}
-
-::-moz-selection {
-  color: #fff;
-  background-color: #458ff6;
-}
-
-::selection {
-  color: #fff;
-  background-color: #458ff6;
-}
-
 /*--------------------*\
          COMMON
 \*--------------------*/
@@ -148,6 +152,10 @@ h3 {
 .btn {
   height: 5rem;
   width: 18rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: 55px;
   background-color: #458ff6;
   color: #fff;
@@ -210,7 +218,7 @@ h3 {
 .loader {
   width: 10rem;
   height: 10rem;
-  background: center/contain no-repeat url(../img/Blocks-1s-200px.gif);
+  background: center/contain no-repeat url(../img/loader.gif);
 }
 
 /*--------------------*\
@@ -309,15 +317,11 @@ h3 {
 \*--------------------*/
 #service-section {
   margin-top: 19rem;
-  background-image: url(../img/element2.png);
-  background-repeat: no-repeat;
-  background-position: right;
+  background: url(../img/element2.png) right no-repeat;
 }
 
 #service-section::before {
   content: "";
-  background-image: url(../img/Vector.jpg);
-  background-repeat: no-repeat;
   opacity: 0.9;
   position: absolute;
   left: -85px;
@@ -325,6 +329,7 @@ h3 {
   height: 670px;
   z-index: -2;
   margin-top: 152px;
+  background: url(../img/bg-element.jpg) no-repeat;
 }
 
 .img__box {
@@ -350,7 +355,7 @@ h3 {
 /*--------------------*\
    ADVANTAGES SECTION
 \*--------------------*/
-#advantages-section {
+.advantages-section {
   margin: 22rem 0;
 }
 
@@ -383,7 +388,7 @@ h3 {
 
 .testimonial::before {
   content: "";
-  background: url(../img/Group.png) no-repeat;
+  background: url(../img/element3.png) no-repeat;
   width: 100px;
   height: 120px;
   position: absolute;
@@ -398,7 +403,7 @@ h3 {
   height: 120px;
   left: 89px;
   position: absolute;
-  background: url(../img/element.png) no-repeat;
+  background: url(../img/element1.png) no-repeat;
   z-index: -1;
 }
 
@@ -510,7 +515,7 @@ h3 {
 
 #article-section::before {
   content: "";
-  background: url(../img/Vector5.png) no-repeat;
+  background: url(../img/bg-element.png) no-repeat;
   position: absolute;
   right: -500px;
   width: 930px;
@@ -566,7 +571,7 @@ h3 {
 }
 
 .article__item__link__body:hover {
-  color: #1f1534;
+  color: #031a39 !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -629,7 +634,7 @@ h3 {
   height: 90px;
   left: -20px;
   position: absolute;
-  background: url(../img/Group.png) no-repeat;
+  background: url(../img/element3.png) no-repeat;
 }
 
 #footer-section * {
@@ -653,6 +658,10 @@ h3 {
 
 .footer__item__link {
   padding: 1.4rem 0 0 0;
+}
+
+.footer__item__link:hover {
+  color: #0a5bcb !important;
 }
 
 .footer__text {
@@ -734,8 +743,12 @@ h3 {
   }
   .testimonial__img,
   .testimonial-line,
-  .testimonial__title {
+  .testimonial__title,
+  .testimonial__body {
     text-align: center;
+  }
+  .testimonial__body {
+    margin-left: 0;
   }
 }
 
@@ -808,6 +821,7 @@ h3 {
   }
   .menu {
     display: inline-block;
+    cursor: pointer;
     margin-left: -30px !important;
   }
   .hero-section--left {
