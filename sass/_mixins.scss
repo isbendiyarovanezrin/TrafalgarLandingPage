@@ -1,7 +1,20 @@
+@mixin img-responsive {
+  width: 100%;
+  height: auto;
+}
+
 @mixin box-shadow($top, $left, $blur, $color) {
   -webkit-box-shadow: $top $left $blur $color;
   -moz-box-shadow: $top $left $blur $color;
   box-shadow: $top $left $blur $color;
+}
+
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+  -moz-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
 }
 
 @mixin transition($property, $duration, $timing-function) {

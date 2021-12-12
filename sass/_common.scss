@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: $font-size-root;
   scroll-behavior: smooth;
 }
 
@@ -13,10 +13,6 @@ img {
   user-select: none;
 }
 
-.img-100 {
-  width: 100%;
-}
-
 .center {
   text-align: center;
 }
@@ -26,6 +22,6 @@ button {
 }
 
 ::selection {
-  color: #fff;
+  color: $white-clr;
   background-color: darken($secondary-clr, 20%);
 }
