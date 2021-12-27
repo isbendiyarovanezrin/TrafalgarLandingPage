@@ -3,10 +3,10 @@
   height: auto;
 }
 
-@mixin box-shadow($top, $left, $blur, $color) {
-  -webkit-box-shadow: $top $left $blur $color;
-  -moz-box-shadow: $top $left $blur $color;
-  box-shadow: $top $left $blur $color;
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 @mixin scale($ratio) {
