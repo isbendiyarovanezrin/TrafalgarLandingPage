@@ -42,6 +42,11 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 ::-moz-selection {
   color: #fff;
   background-color: #0a5bcb;

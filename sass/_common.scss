@@ -21,6 +21,10 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  transform: scale(0.98);
+}
+
 ::selection {
   color: $white-clr;
   background-color: darken($secondary-clr, 20%);
