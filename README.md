@@ -9,4 +9,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 **İşin bitmə müddəti: 1 gün**
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+**Bu layihə [MIT](https://github.com/isbendiyarovanezrin/TrafalgarLandingPage/blob/master/LICENSE "Click me!🧐") lisenziyalıdır.**
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <div>
