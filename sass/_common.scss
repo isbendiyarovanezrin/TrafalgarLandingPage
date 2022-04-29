@@ -11,6 +11,7 @@ body {
 img {
   object-fit: cover;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .center {
@@ -18,11 +19,13 @@ img {
 }
 
 button {
+  user-select: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 ::selection {

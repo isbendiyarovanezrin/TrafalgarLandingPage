@@ -31,7 +31,6 @@ h3 {
 .btn {
   height: $btn-height;
   width: $btn-width;
-  user-select: none;
   border-radius: $border-radius-lg;
   background-color: $secondary-clr;
   color: $white-clr;
@@ -149,6 +148,7 @@ h3 {
 
 .menu {
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-line {
@@ -570,6 +570,7 @@ h3 {
 
   .vector__img--down {
     width: 7%;
+    margin: -$margin-1px;
   }
 
   // testimonial
@@ -691,6 +692,7 @@ h3 {
     width: $size-100-percentage;
     height: $size-100-percentage;
     padding: $padding-4 $padding-3 $padding-3 $padding-2;
+    text-align: center;
   }
 
   .service__story {
@@ -707,16 +709,20 @@ h3 {
   }
 
   // advantages section
+  .row-advantages--left {
+    flex-direction: column-reverse;
+  }
+
   .advantages__item--right {
     padding: $padding-4 $padding-reset $padding-reset;
   }
 
-  .advantages__item--left {
-    padding: $padding-reset $padding-reset $padding-4;
-  }
-
   .mobile-line {
     margin: $margin-2 auto $margin-reset !important;
+  }
+
+  .mobile-advantages__item__img {
+    margin-bottom: $margin-4;
   }
 
   // article section
@@ -765,7 +771,7 @@ h3 {
 }
 
 @media screen and (max-width: 310px) {
-  .testimonial__controls {
+  .dot {
     display: none;
   }
 }
